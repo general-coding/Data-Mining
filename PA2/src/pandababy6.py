@@ -134,7 +134,7 @@ loopstart = time.time()
 for count in range(0, len(df_test.index)):
     class_count = [[]]
                 
-    for cover_type in range(0, 7):
+    for cover_type in range(1, 8):
         try:
             elevation_key = test_dict['Elevation'][count], cover_type
             aspect_key = test_dict['Aspect'][count], cover_type

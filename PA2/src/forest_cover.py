@@ -4,8 +4,10 @@ Created on Feb 22, 2015
 @author: puneeth
 '''
 
-import pandas, csv
+import pandas, csv, time
 from collections import Counter
+
+start  = time.time()
 
 ifname = 'train.csv'
 ofname = 'train_data.csv'
@@ -264,3 +266,8 @@ writer = csv.writer(f)
 writer.writerow(['Id', 'Cover_Type'])
 for key, value in result_dict.items():
     writer.writerow([key, value])
+    
+end = time.time()
+runtime = end - start
+
+print(str(runtime))
