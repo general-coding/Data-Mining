@@ -1,0 +1,10 @@
+Dive right in
+Get started using Sandbox with your own datasets, and connect it to your existing tools and applications.
+
+To use the web interface to explore HDP 2.2 Sandbox navigate to http://172.16.6:8000. The username and password is hue and 1111 respectively.
+
+To SSH into the VM and explore HDP 2.2 Sandbox from the command line
+
+ssh root@172.16.6 -p 2222;
+
+The password is hadoop
