@@ -1,0 +1,11 @@
+The file must define at least the following functions:
+
+query(qstring): return the document that has the highest similarity score with respect to 'qstring'.
+
+gettfidfvec(filename): return the TF-IDF vector for a file (speech), given the file name.
+
+getidf(token): return the inverse document frequency of a token. If the token doesn't exist in the corpus, return 0.
+
+docdocsim(filename1,filename2): return the cosine similarity betwen two speeches (files).
+
+querydocsim(qstring,filename): return the cosine similairty between a query string and a document.
